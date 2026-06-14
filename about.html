@@ -28,13 +28,25 @@
           <ion-icon name="menu-outline"></ion-icon>
         </label>
 
-        <ul class="hidden group-has-[:checked]:flex flex-col justify-end lg:flex lg:flex-row gap-6 font-medium text-gray-700">
+        <ul
+          class="hidden group-has-[:checked]:flex flex-col justify-end lg:flex lg:flex-row gap-6 font-medium text-gray-700">
           <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
           <li><a href="products.html" class="hover:text-indigo-600">Products</a></li>
           <li><a href="about.html" class="hover:text-indigo-600">About</a></li>
           <li><a href="contact.html" class="hover:text-indigo-600">Contact</a></li>
         </ul>
 
+        <div class="relative">
+
+          <i class="fa-solid fa-cart-shopping text-xl"></i>
+
+          <span id="cart-count" class="absolute -top-2 -right-3 bg-red-500 text-white text-xs rounded-full px-2">
+
+            0
+
+          </span>
+
+        </div>
       </nav>
     </div>
   </div>

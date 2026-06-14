@@ -14,7 +14,7 @@
 
 <body class="bg-white text-gray-800">
 
-  <div class=" relative max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"> <!-- Parent -->
+  <section class=" relative max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"> <!-- Parent -->
 
     <div>
       <h1 class="text-2xl font-bold text-indigo-600 ">
@@ -31,32 +31,28 @@
           <ion-icon name="menu-outline"></ion-icon>
         </label>
 
-        <ul class="hidden group-has-[:checked]:flex flex-col justify-end lg:flex lg:flex-row gap-6 font-medium text-gray-700">
+        <ul
+          class="hidden group-has-[:checked]:flex flex-col justify-end lg:flex lg:flex-row gap-6 font-medium text-gray-700">
           <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
           <li><a href="products.html" class="hover:text-indigo-600">Products</a></li>
           <li><a href="about.html" class="hover:text-indigo-600">About</a></li>
           <li><a href="contact.html" class="hover:text-indigo-600">Contact</a></li>
         </ul>
 
+        <div class="relative">
+
+          <i class="fa-solid fa-cart-shopping text-xl"></i>
+
+          <span id="cart-count" class="absolute -top-2 -right-3 bg-red-500 text-white text-xs rounded-full px-2">
+
+            0
+
+          </span>
+
+        </div>
       </nav>
     </div>
-  </div>
-
-
-
-
-  <!-- <div class=" peer-checked:block hidden bg-gray-400 lg:hidden px-4 pb-4">
-    <div>
-      <ul class="flex flex-col gap-4 font-medium text-gray-700">
-        <li><a href="index.html" class="block">Home</a></li>
-        <li><a href="products.html" class="block">Products</a></li>
-        <li><a href="about.html" class="block">About</a></li>
-        <li><a href="contact.html" class="block">Contact</a></li>
-      </ul>
-    </div> -->
-
-
-
+  </section>
 
   <section
     class="relative min-h-fit lg:min-h-screen bg-[url('src/clothcollection.jpg')] bg-cover bg-center flex items-center justify-center text-white">
@@ -85,6 +81,16 @@
       Featured Products
     </h3>
 
+    <select
+    id="category-filter"
+    class="border p-2 rounded">
+
+    <option value="all">All</option>
+    <option value="Men">Men</option>
+    <option value="Women">Women</option>
+
+</select>
+
     <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,_1fr))] gap-6">
 
       <div class="shadow-lg rounded p-4 hover:scale-105 transition">
@@ -110,7 +116,7 @@
       <div class="shadow-lg rounded p-4 hover:scale-105 transition">
 
 
-        <img src="assets/watermark7fdca9b247cf2a33e791ab50f3de3f04.webp" alt="Men's Stripe Print Long Sleeve Shirt"
+        <img src="assets/Men's Stripe Print Long Sleeve Shirt.webp" alt="Men's Stripe Print Long Sleeve Shirt"
           class="w-full h-60 object-cover rounded">
         <h4 class="mt-3 font-semibold">Men's Stripe Print Long Sleeve Shirt</h4>
         <p class="text-indigo-600">$48.00</p>
@@ -129,8 +135,8 @@
       </div>
 
       <div class="shadow-lg rounded p-4 hover:scale-105 transition">
-        <img src="assets/2817bd62c5f0f1a2e48fa86206105bef.webp" alt="Women's Beach High Heel Wedge Buckle Sandals"
-          class="w-full h-60 object-cover rounded">
+        <img src="assets/Women's Beach High Heel Wedge Buckle Sandals.webp"
+          alt="Women's Beach High Heel Wedge Buckle Sandals" class="w-full h-60 object-cover rounded">
         <h4 class="mt-3 font-semibold">Women's Beach High Heel Wedge Buckle Sandals</h4>
         <p class="text-indigo-600">$36.00</p>
 
@@ -147,7 +153,7 @@
       </div>
 
       <div class="shadow-lg rounded p-4 hover:scale-105 transition">
-        <img src="assets/7988b91a4e3e78a962de4b34813954ad.webp"
+        <img src="assets/Retro Floral Patterns Print Long Dress With Ruffled Sleeves.webp"
           alt="Retro Floral Patterns Print Long Dress With Ruffled Sleeves" class="w-full h-60 object-cover rounded">
         <h4 class="mt-3 font-semibold">Retro Floral Patterns Print Long Dress With Ruffled Sleeves</h4>
         <p class="text-indigo-600">$50.00</p>
